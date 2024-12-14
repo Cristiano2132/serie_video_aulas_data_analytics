@@ -8,12 +8,16 @@ alembic==1.14.0
     # via optuna
 category-encoders==2.6.4
     # via -r requirements.in
+certifi==2024.12.14
+    # via ucimlrepo
 colorlog==6.9.0
     # via optuna
 contourpy==1.3.1
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
+et-xmlfile==2.0.0
+    # via openpyxl
 factor-analyzer==0.5.1
     # via -r requirements.in
 fonttools==4.55.3
@@ -46,6 +50,8 @@ numpy==2.2.0
     #   scipy
     #   seaborn
     #   statsmodels
+openpyxl==3.1.5
+    # via -r requirements.in
 optuna==4.1.0
     # via -r requirements.in
 packaging==24.2
@@ -60,6 +66,7 @@ pandas==2.2.3
     #   factor-analyzer
     #   seaborn
     #   statsmodels
+    #   ucimlrepo
 patsy==1.0.1
     # via
     #   category-encoders
@@ -110,3 +117,5 @@ typing-extensions==4.12.2
     #   sqlalchemy
 tzdata==2024.2
     # via pandas
+ucimlrepo==0.0.7
+    # via -r requirements.in

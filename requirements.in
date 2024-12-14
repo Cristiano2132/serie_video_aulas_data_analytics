@@ -7,3 +7,5 @@ category_encoders
 lightgbm
 optuna
 factor_analyzer
+ucimlrepo
+openpyxl
