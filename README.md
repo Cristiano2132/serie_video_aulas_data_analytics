@@ -1,8 +1,9 @@
-# Plano de Videoaulas: MBA em Data Science e Analytics
+# Plano de Videoaulas: Data Science e Analytics
 
 ## Módulo Introdutório: Fundamentos de Estatística
 
 ### 1. Estatísticas Descritivas
+
 **Objetivo:** Introduzir medidas de tendência central, dispersão e gráficos.  
 **Problema de Negócio:** Resumir um conjunto de dados de vendas para entender melhor as características dos clientes.  
 **Background:**  
@@ -13,11 +14,13 @@ Estatísticas descritivas são essenciais para entender as características bás
 ---
 
 ### 2. Relação entre Variáveis
+
 **Objetivo:** Explorar relações entre variáveis qualitativas e quantitativas.  
 **Problema de Negócio:** Identificar relações entre características dos clientes e suas decisões de compra.  
 **Background:**  
 A relação entre variáveis ajuda a identificar associações importantes em dados. O coeficiente de correlação mede a força e a direção de uma relação linear entre variáveis numéricas, enquanto o teste qui-quadrado avalia associações entre categorias.  
-**Exercício:**  
+**Exercício:**
+
 - Usar `scipy.stats` para calcular o coeficiente de correlação de Pearson.
 
 ```python
@@ -35,11 +38,13 @@ print(f"Coeficiente de correlação: {corr:.2f}")
 **Fontes de Dados:** Kaggle, UCI Machine Learning Repository
 
 ### 3. Distribuições de Probabilidade
+
 **Objetivo:** Apresentar distribuições discretas e contínuas.  
 **Problema de Negócio:** Simular vendas diárias de uma loja usando distribuições binomial e normal.  
 **Background:**  
 Compreender distribuições é essencial para modelar incertezas em dados. A distribuição normal é amplamente usada por sua aplicação em fenômenos naturais, enquanto a binomial é útil para modelar contagens de sucessos em ensaios.  
-**Exercício:**  
+**Exercício:**
+
 - Usar numpy para simular dados de uma distribuição normal.
 
 ```python
@@ -52,15 +57,17 @@ data = np.random.normal(loc=50, scale=10, size=1000)
 **Fontes de Dados:** Simulação de dados com NumPy
 
 ### 4. Testes de Hipóteses
-**Objetivo:** Introduzir testes estatísticos para médias, variâncias e associações.  
-**Problemas de Negócio:**  
-1. Verificar se a média de vendas de uma loja é diferente de um valor esperado.  
-2. Comparar a média de duas lojas para avaliar diferenças de performance.  
-**Background:**  
-Os testes de hipóteses ajudam a validar suposições sobre os dados. O teste Z é usado para grandes amostras, enquanto o teste t é apropriado para amostras menores. O teste qui-quadrado avalia associações em tabelas de frequência.  
-**Exercícios Comuns e Exemplos:**  
 
-1. Teste Z para médias (uma amostra): Verificar se a média de vendas é igual a 500 unidades.
+**Objetivo:** Introduzir testes estatísticos para médias, variâncias e associações.  
+**Problemas de Negócio:**
+
+1. Verificar se a média de vendas de uma loja é diferente de um valor esperado.
+2. Comparar a média de duas lojas para avaliar diferenças de performance.  
+   **Background:**  
+   Os testes de hipóteses ajudam a validar suposições sobre os dados. O teste Z é usado para grandes amostras, enquanto o teste t é apropriado para amostras menores. O teste qui-quadrado avalia associações em tabelas de frequência.  
+   **Exercícios Comuns e Exemplos:**
+
+3. Teste Z para médias (uma amostra): Verificar se a média de vendas é igual a 500 unidades.
 
 ```python
 from statsmodels.stats.weightstats import ztest
@@ -136,43 +143,49 @@ print(f"Intervalo de Confiança: {ci}")
 ## Módulo: Modelos Supervisionados e Não Supervisionados de Machine Learning
 
 ### 1. Unsupervised Learning: Clustering
+
 **Objetivo:** Agrupar clientes com base em comportamento.  
 **Problema de Negócio:** Aplicar K-means para segmentar clientes de um e-commerce.  
 **Background:**  
 Segmentar clientes ajuda empresas a personalizar ofertas e campanhas. K-means é uma técnica eficiente para identificar padrões em grandes conjuntos de dados.  
-**Dados:** Mall Customers Dataset, disponível no Kaggle.  
+**Dados:** Mall Customers Dataset, disponível no Kaggle.
 
 ### 2. Unsupervised Learning: PCA
+
 **Objetivo:** Reduzir a dimensionalidade de dados complexos.  
 **Problema de Negócio:** Aplicar PCA em um dataset de atributos físicos de flores.  
 **Background:**  
 O PCA é usado para simplificar conjuntos de dados ao identificar direções de máxima variância, reduzindo ruído e melhorando a eficiência computacional.  
-**Dados:** Dataset Iris do Scikit-Learn.  
+**Dados:** Dataset Iris do Scikit-Learn.
 
 ### 3. Supervised Learning: Modelos Logísticos
+
 **Objetivo:** Prever inadimplência em operações financeiras.  
 **Problema de Negócio:** Construir um modelo de regressão logística binária para prever a probabilidade de um cliente ser inadimplente.  
 **Background:**  
 Modelos logísticos são amplamente usados para prever a probabilidade de um evento binário, como aprovação de crédito ou fraude.  
-**Dados:** Credit Risk Dataset, disponível no Kaggle.  
+**Dados:** Credit Risk Dataset, disponível no Kaggle.
 
 ### 4. Supervised Learning: Modelos para Dados de Contagem
+
 **Objetivo:** Modelar frequências de eventos.  
 **Problema de Negócio:** Usar regressão de Poisson para prever ocorrências de incidentes de segurança no trabalho.  
 **Background:**  
 A regressão de Poisson é ideal para modelar contagens de eventos em um intervalo de tempo fixo.  
-**Dados:** Simular um dataset de dados de incidentes.  
+**Dados:** Simular um dataset de dados de incidentes.
 
 ### 5. Séries Temporais
+
 **Objetivo:** Analisar padrões temporais e fazer previsões.  
 **Problema de Negócio:** Criar um modelo ARIMA para prever vendas semanais de uma loja.  
 **Background:**  
 Séries temporais são usadas para analisar dados que variam no tempo, como vendas, tráfego ou clima. Modelos ARIMA são eficazes para previsão em séries estacionárias.  
-**Dados:** Retail Sales Dataset, disponível no Kaggle.  
+**Dados:** Retail Sales Dataset, disponível no Kaggle.
 
 ## Módulo: Tendências em Data Science e Analytics
 
 ### 1. Data Wrangling
+
 **Objetivo:** Manipular dados com eficiência.  
 **Problema de Negócio:** Limpar e preparar dados de vendas para análise.  
 **Background:**  
@@ -180,15 +193,16 @@ Data wrangling é o processo de organizar e formatar dados para análise. É um 
 **Ferramentas:** Pandas e Jupyter Notebooks.  
 **Dados:** Vendas de e-commerce (Kaggle, UCI Machine Learning Repository).
 
-
 ### 2. Text Mining e Sentiment Analysis
+
 **Objetivo:** Identificar sentimentos em textos.  
 **Problema de Negócio:** Analisar reviews da Amazon para identificar opiniões positivas e negativas.  
 **Background:**  
 A análise de sentimentos é amplamente usada para entender percepções dos clientes sobre produtos e serviços. Utilizando técnicas de mineração de texto, é possível extrair informações valiosas de grandes volumes de dados textuais.  
-**Dados:** Amazon Reviews Dataset, disponível no Kaggle.  
+**Dados:** Amazon Reviews Dataset, disponível no Kaggle.
 
 ### 3. Deep Learning
+
 **Objetivo:** Introduzir redes neurais artificiais.  
 **Problema de Negócio:** Criar uma rede neural para classificação de imagens de dígitos escritos à mão.  
 **Background:**  
@@ -198,62 +212,73 @@ Redes neurais são inspiradas no cérebro humano e são usadas para resolver pro
 ## Exemplo de Estrutura das Aulas
 
 ### Aula 1: Introdução às Estatísticas Descritivas
+
 1. **Objetivo:** Compreender as principais medidas de tendência central e dispersão.
 2. **Conteúdo:** Conceitos de média, mediana, variância, desvio padrão e histogramas.
 3. **Exercício Prático:** Usar Python (bibliotecas como NumPy e Pandas) para calcular estatísticas descritivas e criar histogramas com o dataset Iris.
 
 ### Aula 2: Exploração da Relação entre Variáveis
+
 1. **Objetivo:** Identificar e medir relações entre variáveis numéricas e categóricas.
 2. **Conteúdo:** Coeficiente de correlação de Pearson, testes qui-quadrado.
 3. **Exercício Prático:** Calcular correlações e realizar testes qui-quadrado com dados fictícios.
 
 ### Aula 3: Distribuições de Probabilidade
+
 1. **Objetivo:** Conhecer distribuições de probabilidade discretas e contínuas.
 2. **Conteúdo:** Distribuições binomial e normal.
 3. **Exercício Prático:** Simular dados utilizando distribuições e visualizar resultados com gráficos.
 
 ### Aula 4: Testes de Hipóteses
+
 1. **Objetivo:** Aplicar testes estatísticos para validar suposições sobre dados.
 2. **Conteúdo:** Teste Z, teste t, teste F, teste qui-quadrado, intervalos de confiança.
 3. **Exercício Prático:** Realizar testes de hipóteses com dados fictícios e interpretar resultados.
 
 ### Aula 5: Aprendizado Não Supervisionado – Clustering
+
 1. **Objetivo:** Aplicar técnicas de agrupamento para segmentação de dados.
 2. **Conteúdo:** Algoritmo K-means.
 3. **Exercício Prático:** Segmentar clientes de um e-commerce utilizando K-means com um dataset disponível no Kaggle.
 
 ### Aula 6: Aprendizado Não Supervisionado – PCA
+
 1. **Objetivo:** Reduzir a dimensionalidade de dados complexos.
 2. **Conteúdo:** Algoritmo PCA (Análise de Componentes Principais).
 3. **Exercício Prático:** Aplicar PCA em dados do dataset Iris para reduzir a dimensionalidade e visualizar os resultados.
 
 ### Aula 7: Aprendizado Supervisionado – Regressão Logística
+
 1. **Objetivo:** Construir um modelo de regressão logística para previsões binárias.
 2. **Conteúdo:** Conceitos de regressão logística, interpretação de coeficientes.
 3. **Exercício Prático:** Prever inadimplência financeira com um dataset de risco de crédito do Kaggle.
 
 ### Aula 8: Aprendizado Supervisionado – Regressão de Poisson
+
 1. **Objetivo:** Modelar contagens de eventos usando regressão de Poisson.
 2. **Conteúdo:** Conceitos de regressão de Poisson, adequação do modelo.
 3. **Exercício Prático:** Prever incidentes de segurança no trabalho com dados simulados.
 
 ### Aula 9: Séries Temporais
+
 1. **Objetivo:** Analisar dados temporais e fazer previsões.
 2. **Conteúdo:** Modelos ARIMA.
 3. **Exercício Prático:** Prever vendas semanais de uma loja usando um dataset de vendas no Kaggle.
 
 ### Aula 10: Data Wrangling
+
 1. **Objetivo:** Limpar e preparar dados para análise.
 2. **Conteúdo:** Técnicas de manipulação de dados com Pandas.
 3. **Exercício Prático:** Limpar e preparar dados de vendas de e-commerce para análise.
 
 ### Aula 11: Text Mining e Sentiment Analysis
+
 1. **Objetivo:** Realizar análise de sentimentos em grandes volumes de textos.
 2. **Conteúdo:** Técnicas de mineração de texto e análise de sentimentos.
 3. **Exercício Prático:** Analisar reviews da Amazon para identificar sentimentos usando um dataset disponível no Kaggle.
 
 ### Aula 12: Deep Learning
+
 1. **Objetivo:** Introduzir conceitos e aplicações de redes neurais.
 2. **Conteúdo:** Estrutura de redes neurais, treinamento e avaliação de modelos.
 3. **Exercício Prático:** Classificar dígitos escritos à mão usando o dataset MNIST.
-
