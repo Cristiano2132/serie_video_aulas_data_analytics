@@ -1,0 +1,10 @@
+pandas
+matplotlib
+seaborn
+scikit-learn
+spyder-kernels
+statsmodels
+category_encoders
+lightgbm
+optuna
+factor_analyzer

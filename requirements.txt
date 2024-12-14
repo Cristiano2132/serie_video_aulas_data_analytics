@@ -1,0 +1,53 @@
+
+scipy==1.14.1
+    # via
+    #   category-encoders
+    #   factor-analyzer
+    #   lightgbm
+    #   scikit-learn
+    #   statsmodels
+seaborn==0.13.2
+    # via -r requirements.in
+six==1.16.0
+    # via
+    #   asttokens
+    #   python-dateutil
+spyder-kernels==3.0.1
+    # via -r requirements.in
+sqlalchemy==2.0.36
+    # via
+    #   alembic
+    #   optuna
+stack-data==0.6.3
+    # via ipython
+statsmodels==0.14.4
+    # via
+    #   -r requirements.in
+    #   category-encoders
+threadpoolctl==3.5.0
+    # via scikit-learn
+tornado==6.4.1
+    # via
+    #   ipykernel
+    #   jupyter-client
+tqdm==4.67.0
+    # via optuna
+traitlets==5.14.3
+    # via
+    #   comm
+    #   ipykernel
+    #   ipython
+    #   jupyter-client
+    #   jupyter-core
+    #   matplotlib-inline
+typing-extensions==4.12.2
+    # via
+    #   alembic
+    #   ipython
+    #   sqlalchemy
+tzdata==2024.2
+    # via pandas
+wcwidth==0.2.13
+    # via prompt-toolkit
+wurlitzer==3.1.1
+    # via spyder-kernels
